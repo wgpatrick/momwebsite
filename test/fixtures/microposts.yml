@@ -2,8 +2,10 @@
 
 one:
   content: MyString
-  user_id: 1
+  city: MyString
+  state: MyString
 
 two:
   content: MyString
-  user_id: 1
+  city: MyString
+  state: MyString
