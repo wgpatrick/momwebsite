@@ -5,8 +5,8 @@ gem 'jquery-rails'
 gem 'prettyphoto-rails'
 gem 'turbolinks'
 gem 'jbuilder'
-
-
+gem 'sass-rails',   '~> 3.2.3'
+gem 'anjlab-bootstrap-rails', '~> 3.0.2.0', :require => 'bootstrap-rails'
 
 group :development do
 	gem 'sqlite3'
@@ -21,7 +21,6 @@ group :test do
 end
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
 end
