@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.12'
 gem 'jquery-rails'
+gem 'prettyphoto-rails'
+gem 'turbolinks'
+gem 'jbuilder'
+
 
 group :development do
 	gem 'sqlite3'

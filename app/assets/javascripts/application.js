@@ -13,3 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+//= require jquery
+//= require prettyphoto-rails
+//= require prettyphoto-rails-dev /* use this for uncompressed javascript code */
