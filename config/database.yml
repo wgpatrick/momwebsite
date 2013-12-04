@@ -1,23 +1,23 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: microposts
+  database: comments
   pool: 5
-  username: will
-  password:
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: microposts
-  pool: 5
-  username: will
-  password:
+  username: momwebsite
+  password: 
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: microposts
+  database: comments
   pool: 5
-  username: will
-  password:
+  username: momwebsite
+  password: 
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: comments
+  pool: 5
+  username: momwebsite
+  password: 
