@@ -1,4 +1,7 @@
 Momwebsite::Application.routes.draw do
+  resources :microposts
+
+
   get "static_pages/home"
 
   get "static_pages/family"
