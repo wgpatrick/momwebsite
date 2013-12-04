@@ -4,4 +4,8 @@ class StaticPagesController < ApplicationController
 
   def family
   end
+
+  def guestbook
+  end
+
 end
