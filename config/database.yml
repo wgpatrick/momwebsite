@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: myapp_development
+  database: comments
   pool: 5
   username: momwebsite
   password: 
@@ -9,7 +9,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: myapp_test
+  database: comments
   pool: 5
   username: momwebsite
   password: 
