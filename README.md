@@ -1,3 +1,3 @@
 <h1>The Purpose</h1>
 
-A classy website for a classy lady.
+A website to remember Meg Kemper, my mom. I miss her so much.
