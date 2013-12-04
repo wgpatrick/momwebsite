@@ -5,6 +5,8 @@ gem 'jquery-rails'
 gem 'prettyphoto-rails'
 gem 'turbolinks'
 gem 'jbuilder'
+gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
+                              :github => 'anjlab/bootstrap-rails'
 
 
 group :development do
