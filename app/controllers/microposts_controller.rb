@@ -24,7 +24,7 @@ class MicropostsController < ApplicationController
   # GET /microposts/new
   # GET /microposts/new.json
   def new
-    @posts = Micropost.find(params[:id])
+    @posts = Micropost.all
     @micropost = Micropost.new
 
     respond_to do |format|
