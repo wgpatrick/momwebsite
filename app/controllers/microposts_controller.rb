@@ -45,10 +45,10 @@ class MicropostsController < ApplicationController
 
     respond_to do |format|
       if @micropost.save
-        format.html { redirect_to "guestbook", notice: 'Micropost was successfully created.' }
-        format.json { render json: "guestbook", status: :created, location: @micropost }
+        format.html { redirect_to "/guestbook", notice: 'Micropost was successfully created.' }
+        format.json { render json: "/guestbook", status: :created, location: @micropost }
       else
-        format.html { render action: "guestbook" }
+        format.html { render action: "/guestbook" }
         format.json { render json: @micropost.errors, status: :unprocessable_entity }
       end
     end
