@@ -1,2 +1,14 @@
 <h1>Pics here</h1>
 <p></p>
+
+<div class='galleria'></div>
+
+<script type="text/javascript">
+	var data = [
+			{ image: <%= image_tag "img1.png" %>},
+			{ image: <%= image_tag "img2.png" %>},
+				];
+	Galleria.run('.galleria', {
+		dataSource: data,
+	});
+</script>
