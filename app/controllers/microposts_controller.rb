@@ -24,6 +24,7 @@ class MicropostsController < ApplicationController
   # GET /microposts/new
   # GET /microposts/new.json
   def new
+    @posts = Micropost.find(params[:id])
     @micropost = Micropost.new
 
     respond_to do |format|
@@ -44,8 +45,8 @@ class MicropostsController < ApplicationController
 
     respond_to do |format|
       if @micropost.save
-        format.html { redirect_to @micropost, notice: 'Micropost was successfully created.' }
-        format.json { render json: @micropost, status: :created, location: @micropost }
+        format.html { redirect_to "new", notice: 'Micropost was successfully created.' }
+        format.json { render json: "new", status: :created, location: @micropost }
       else
         format.html { render action: "new" }
         format.json { render json: @micropost.errors, status: :unprocessable_entity }
