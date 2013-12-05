@@ -1,9 +1,9 @@
 Momwebsite::Application.routes.draw do
   resources :microposts
-  
+
   root :to => 'static_pages#home'
   get "family" => "static_pages#family"
-  get "guestbook" => "microposts#index"
+  get "guestbook" => "microposts#new"
   resources :microposts
 
 
