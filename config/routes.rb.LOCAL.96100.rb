@@ -1,10 +1,11 @@
 Momwebsite::Application.routes.draw do
-  root :to => 'static_pages#home'
-  get "family" => "static_pages#family"
-  get "guestbook" => "microposts#index"
   resources :microposts
 
 
+  root :to => 'static_pages#home'
+  get "family" => "static_pages#family"
+  get "guestbook" => "static_pages#guestbook"
+  get "microposts" => "microposts#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

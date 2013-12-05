@@ -1,0 +1,48 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+<<<<<<< HEAD
+  database: guestbook
+=======
+  database: comments
+>>>>>>> b33bd1f276e18b6c7cc688e71115ef7327b8d250
+  pool: 5
+  username: momwebsite
+  password: 
+
+test:
+  adapter: postgresql
+  encoding: unicode
+<<<<<<< HEAD
+  database: guestbook
+=======
+  database: comments
+>>>>>>> b33bd1f276e18b6c7cc688e71115ef7327b8d250
+  pool: 5
+  username: momwebsite
+  password: 
+
+<<<<<<< HEAD
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: guestbook
+  pool: 5
+  username: momwebsite
+  password: 
+
+#  
+#production:
+#  adapter: sqlite3
+#  database: db/production.sqlite3
+#  pool: 5
+#  timeout: 5000
+=======
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: comments
+  pool: 5
+  username: momwebsite
+  password: 
+>>>>>>> b33bd1f276e18b6c7cc688e71115ef7327b8d250
