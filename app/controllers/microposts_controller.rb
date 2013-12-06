@@ -24,7 +24,7 @@ class MicropostsController < ApplicationController
   # GET /microposts/new
   # GET /microposts/new.json
   def new
-    @posts = Micropost.all
+    @posts = Micropost.order("created_at DESC").all
     @micropost = Micropost.new
 
     respond_to do |format|
