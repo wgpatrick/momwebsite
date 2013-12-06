@@ -2,14 +2,13 @@
 <br>
 
 <div class="row" style='text-align:left;'>
-	<div class='col-md-8 col-md-offset-2' style='left:-9px;'>
+	<div class='col-md-12'>
 		<%= render 'form' %>
-	</div>
-	<div class='col-md-2'>
 	</div>
 </div>
 
 <br>
+
 <div class='row'>
 
 <table>
@@ -18,32 +17,25 @@
   <!-- need to design this -->
   <tr>
 	 <div class="row">
-	 	<div class='col-md-8 col-md-offset-2' style='color:teal'>
+	 	<div class='col-md-12' style='color:black'>
 	 		<div class="row">
 				<div class="col-md-5">
-					<span style='font-weight:bold;font-size:14px;color:#333'><%= micropost.name %></span> <span style='font-weight:none;font-size:12px;color:#999'>(<%= micropost.email.partition('@').first %>)</span>
+					<span style='font-weight:bold;font-size:20px;color:#333'><%= micropost.name %></span>
 				</div>
 				<div class='col-md-3 col-md-offset-4'>
-					<%= micropost.created_at.strftime("%m/%d/%y %H:%M") %>
+					<%= micropost.created_at.strftime("%m/%d/%y") %>
 				</div>
 			</div>
 			<div class="row">
 				<div class='col-md-12'>
-					<span style='font-size:14px'><%= micropost.content %></span>
+					<span style='font-size:16px'><%= micropost.content %></span>
 				</div>
 			</div>
-		</div>
-		 <div class='col-md-2'>
 		</div>
 	  </div>
 	</tr>
 	<br style='line-height:23px'>
 
-  <!--<tr>
-    <td><%= micropost.content %></td>
-    <td><%= micropost.city %></td>
-    <td><%= micropost.state %></td>
-  </tr>-->
 <% end %>
 </table>
 
