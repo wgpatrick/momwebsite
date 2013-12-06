@@ -1,5 +1,4 @@
-<h1>Thoughts from friends and family</h1>
-<br>
+<p>We would love to hear your thoughts about Meg. Please share memories, funny stories, snippets of Wisdom from Meg or anything you would like. You're message will be posted below.</p>
 
 <div class="row" style='text-align:left;'>
 	<div class='col-md-12'>
@@ -9,6 +8,7 @@
 
 <br>
 
+<p>Memories of Meg:</p>
 <div class='row'>
 
 <table>
@@ -23,12 +23,12 @@
 					<span style='font-weight:bold;font-size:20px;color:#333'><%= micropost.name %></span>
 				</div>
 				<div class='col-md-3 col-md-offset-4'>
-					<%= micropost.created_at.strftime("%m/%d/%y") %>
+					Posted on <%= micropost.created_at.strftime("%m/%d/%y") %>
 				</div>
 			</div>
 			<div class="row">
 				<div class='col-md-12'>
-					<span style='font-size:16px'><%= micropost.content %></span>
+					<span style='font-size:20px line-height:30px'><%= micropost.content %></span>
 				</div>
 			</div>
 		</div>
