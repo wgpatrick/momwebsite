@@ -14,7 +14,7 @@ test:
   username: momwebsite
   password: 
 
-test:
+production:
   adapter: postgresql
   encoding: unicode
   database: guestbook

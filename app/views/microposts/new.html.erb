@@ -12,7 +12,7 @@
 	 	<div class='col-md-8 col-md-offset-2'>
 	 		<div class="row">
 				<div class="col-md-5">
-					<span style='font-weight:bold;font-size:14px;color:#333'><%= micropost.name %></span> <span style='font-weight:none;font-size:12px;color:#999'>(email head)</span>
+					<span style='font-weight:bold;font-size:14px;color:#333'><%= micropost.name %></span> <span style='font-weight:none;font-size:12px;color:#999'>(<%= micropost.email.partition('@').first %>)</span>
 				</div>
 				<div class='col-md-3 col-md-offset-4'>
 					<%= micropost.created_at.strftime("%m/%d/%y %H:%M") %>
