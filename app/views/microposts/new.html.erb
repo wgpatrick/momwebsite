@@ -1,31 +1,36 @@
-<p>We would love to hear your memories and thoughts about Meg. </p>
-<p>Please share them in the form below and they will be posted below.</p>
+<div class="row">
+	<div class="col-md-12">
 
-<%= render 'form' %>
+	<p>We would love to hear your memories and thoughts about Meg. </p>
+	<p>Please share them in the form below and they will be posted below.</p>
 
-<hr>
-<h3>Your memories of Meg:</h3>
-<hr>
-<% @posts.each do |micropost| %>
-<!-- need to design this -->
+	<%= render 'form' %>
 
- <div class="row">
- 	<div class='col-md-12' style='color:black'>
- 		<div class="row">
-			<div class="col-md-5">
-				<span style='font-weight:bold;font-size:20px;color:#333'><%= micropost.name %></span>
+	<hr>
+	<h3>Your memories of Meg:</h3>
+	<hr>
+	<% @posts.each do |micropost| %>
+	<!-- need to design this -->
+
+	 <div class="row">
+	 	<div class='col-md-12' style='color:black'>
+	 		<div class="row">
+				<div class="col-md-5">
+					<span style='font-weight:bold;font-size:20px;color:#333'><%= micropost.name %></span>
+				</div>
+				<div class='col-md-3 col-md-offset-4'>
+					Posted on <%= micropost.created_at.strftime("%m/%d/%y") %>
+				</div>
 			</div>
-			<div class='col-md-3 col-md-offset-4'>
-				Posted on <%= micropost.created_at.strftime("%m/%d/%y") %>
+			<div class="row">
+				<div class='col-md-12'>
+					<span style='font-size:20px;line-height:30px'><%= micropost.message %></span>
+				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class='col-md-12'>
-				<span style='font-size:20px;line-height:30px'><%= micropost.message %></span>
-			</div>
-		</div>
+	  </div>
+
+	<% end %>
+	<hr>
 	</div>
-  </div>
-
-<% end %>
-<hr>
+</div
