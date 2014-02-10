@@ -41,7 +41,11 @@ class MicropostsController < ApplicationController
   # POST /microposts
   # POST /microposts.json
   def create
-    @micropost = Micropost.new(params[:micropost])
+    if simple_captcha_valid?
+      @micropost = Micropost.new(params[:micropost])
+    else
+      redirect_to "/guestbook", notice: 'Captcha was incorrect.'
+    end
 
     respond_to do |format|
       if @micropost.save
