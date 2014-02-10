@@ -44,7 +44,7 @@ class MicropostsController < ApplicationController
     if simple_captcha_valid?
       @micropost = Micropost.new(params[:micropost])
     else
-      redirect_to "/guestbook", notice: 'Captcha was incorrect.'
+      format.html { redirect_to "/guestbook", notice: 'Captcha was incorrect.' }
     end
 
     respond_to do |format|
@@ -60,6 +60,7 @@ class MicropostsController < ApplicationController
 
   # PUT /microposts/1
   # PUT /microposts/1.json
+
   def update
     @micropost = Micropost.find(params[:id])
 
