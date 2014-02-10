@@ -44,7 +44,7 @@ class MicropostsController < ApplicationController
     if simple_captcha_valid?
       @micropost = Micropost.new(params[:micropost])
     else
-      format.html { redirect_to "/guestbook", notice: 'Captcha was incorrect.' }
+      format.html { render action: "/guestbook", notice: 'Captcha was incorrect.' }
     end
 
     respond_to do |format|
