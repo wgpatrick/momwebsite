@@ -8,6 +8,8 @@ gem 'jbuilder'
 gem 'sass-rails',   '~> 3.2.3'
 gem 'anjlab-bootstrap-rails', '~> 3.0.2.0', :require => 'bootstrap-rails'
 
+gem "galetahub-simple_captcha", :require => "simple_captcha"
+
 group :development do
 	gem 'sqlite3'
 	gem 'pg'

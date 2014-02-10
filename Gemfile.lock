@@ -42,6 +42,7 @@ GEM
     coffee-script-source (1.6.3)
     erubis (2.7.0)
     execjs (2.0.2)
+    galetahub-simple_captcha (0.1.5)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (1.5.3)
@@ -124,6 +125,7 @@ PLATFORMS
 DEPENDENCIES
   anjlab-bootstrap-rails (~> 3.0.2.0)
   coffee-rails (~> 3.2.1)
+  galetahub-simple_captcha
   jbuilder
   jquery-rails
   pg
